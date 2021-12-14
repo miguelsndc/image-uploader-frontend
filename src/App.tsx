@@ -10,7 +10,11 @@ function App() {
         <footer>
           <span>
             created by{' '}
-            <a href='https://github.com/miguelsndc' target='_blank'>
+            <a
+              href='https://github.com/miguelsndc'
+              target='_blank'
+              rel='noreferrer'
+            >
               miguelsndc
             </a>
             - devChallenges.io

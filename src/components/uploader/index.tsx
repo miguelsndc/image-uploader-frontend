@@ -110,7 +110,7 @@ export const Uploader = () => {
         <img
           src={url}
           className={styles.imageContainer}
-          alt='Recently uploaded image'
+          alt='Recently uploaded'
         />
         <div className={styles.copyContainer}>
           <p>{url}</p>
