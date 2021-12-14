@@ -57,10 +57,6 @@
   margin: 1rem 0;
 }
 
-.box button:hover {
-  filter: brightness(0.9);
-}
-
 .previewImage {
   width: 100%;
   border-radius: 12px;
@@ -80,6 +76,10 @@
   transition: filter 0.2s;
   font: inherit;
   font-size: 0.75rem;
+}
+
+.defaultButton:hover {
+  filter: brightness(0.9);
 }
 
 .draggingOverlay {
@@ -206,4 +206,22 @@
 
 .successfulIcon svg {
   fill: var(--white);
+}
+
+.uploadAnother {
+  border: 2px solid var(--blue1);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background: var(--blue3);
+  color: var(--gray1);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  transition: all 0.2s;
+  margin-top: 1.5rem;
+}
+
+.uploadAnother:hover {
+  background: var(--blue1);
+  color: var(--white);
 }

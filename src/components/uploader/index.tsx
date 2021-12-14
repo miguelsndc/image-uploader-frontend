@@ -60,7 +60,7 @@ export const Uploader = () => {
 
     try {
       const response = await axios.post<UploadResponseData>(
-        'http://localhost:3333/upload',
+        'https://miguelsndc-image-uploader.herokuapp.com/upload',
         formData,
         {
           headers: {
@@ -81,6 +81,12 @@ export const Uploader = () => {
   const onCopyUrl = () => {
     navigator.clipboard.writeText(url);
     alert('Copied successfully');
+  };
+
+  const reset = () => {
+    setUploadCompleted(false);
+    setFile(null);
+    setUrl('');
   };
 
   const UploadLoader = () => {
@@ -108,6 +114,9 @@ export const Uploader = () => {
             Copy Link
           </button>
         </div>
+        <button className={styles.uploadAnother} onClick={reset}>
+          Upload another image
+        </button>
       </div>
     );
   };
