@@ -1,0 +1,209 @@
+.box {
+  max-width: 402px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1.6rem;
+}
+
+.box h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.box span,
+.box h1,
+.box h3,
+.box p {
+  letter-spacing: -0.035em;
+}
+
+.box h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray3);
+  margin-bottom: 2.4rem;
+}
+
+.dropzone {
+  border: 2px dashed var(--blue2);
+  background: var(--blue3);
+  border-radius: 12px;
+  position: relative;
+}
+
+.fix {
+  display: flex;
+  align-items: center;
+}
+
+.vector {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.dropzone p {
+  margin-bottom: 2rem;
+}
+
+.box span,
+.dropzone p {
+  font-weight: 500;
+  color: var(--gray4);
+}
+
+.box span {
+  display: block;
+  margin: 1rem 0;
+}
+
+.box button:hover {
+  filter: brightness(0.9);
+}
+
+.previewImage {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.uploadButton {
+  margin-top: 2rem;
+}
+
+.defaultButton {
+  border: none;
+  color: var(--white);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background: var(--blue1);
+  cursor: pointer;
+  transition: filter 0.2s;
+  font: inherit;
+  font-size: 0.75rem;
+}
+
+.draggingOverlay {
+  inset: 0;
+  opacity: 0.85;
+  background: var(--blue1);
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.draggingOverlay svg {
+  fill: var(--white);
+}
+
+.controls {
+  position: absolute;
+  top: 8px;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.controls button {
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.removeButton {
+  background: var(--red1);
+}
+
+.removeButton svg,
+.openDialogButton svg {
+  fill: var(--white);
+}
+
+.openDialogButton {
+  background: var(--blue1);
+}
+
+.loaderContainer {
+  text-align: start;
+}
+
+.progressContainer {
+  height: 6px;
+  border-radius: 8px;
+  background: var(--gray6);
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar {
+  position: absolute;
+  height: 6px;
+  border-radius: 8px;
+  background: var(--blue1);
+  width: 100px;
+  animation-name: loading;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes loading {
+  from {
+    left: -105px;
+  }
+  to {
+    left: 105%;
+  }
+}
+
+.imageContainer {
+  border-radius: 12px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.copyContainer {
+  border: 1px solid var(--gray5);
+  background: var(--blue3);
+  border-radius: 8px;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.copyContainer p {
+  display: block;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.copyContainer button {
+  white-space: nowrap;
+
+  margin: 0.15rem;
+}
+
+.successfulIcon {
+  width: 2.45rem;
+  height: 2.45rem;
+  padding: 0.25rem;
+  border-radius: 50%;
+  background: var(--green1);
+  margin: 1rem auto;
+}
+
+.successfulIcon svg {
+  fill: var(--white);
+}
