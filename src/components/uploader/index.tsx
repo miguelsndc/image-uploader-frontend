@@ -107,7 +107,11 @@ export const Uploader = () => {
           <AiOutlineCheck size={'100%'} />
         </div>
         <h1>Uploaded Successfully!</h1>
-        <img src={url} className={styles.imageContainer} />
+        <img
+          src={url}
+          className={styles.imageContainer}
+          alt='Recently uploaded image'
+        />
         <div className={styles.copyContainer}>
           <p>{url}</p>
           <button className={styles.defaultButton} onClick={onCopyUrl}>
