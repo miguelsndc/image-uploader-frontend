@@ -3,9 +3,21 @@ import { Uploader } from './components/uploader';
 
 function App() {
   return (
-    <div className='container'>
-      <Uploader />
-    </div>
+    <>
+      <main className='container'>
+        <Uploader />
+
+        <footer>
+          <span>
+            created by{' '}
+            <a href='https://github.com/miguelsndc' target='_blank'>
+              miguelsndc
+            </a>
+            - devChallenges.io
+          </span>
+        </footer>
+      </main>
+    </>
   );
 }
 
